@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Pribadi</title>
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">Blog Pribadi</h1>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <section id="post-form" class="post-form">
+        <h2 class="post-form__title">Tulis Artikel</h2>
+        <input type="text" id="title" class="post-form__input" placeholder="Judul">
+        <textarea id="content" class="post-form__textarea" placeholder="Isi Artikel"></textarea>
+        <button onclick="submitPost()" class="post-form__button">Post</button>
+      </section>
+      <section id="posts-list" class="posts-list">
+        <h2 class="posts-list__title">Daftar Postingan</h2>
+        <ul id="posts" class="posts-list__container"></ul>
+      </section>
+    </div>
+  </main>
+  <script src="blog.js"></script>
+</body>
+</html>
